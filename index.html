@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakker Stef - Graphic Designer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="background-stripes"></div>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="/pages/Aboutme.html">About me</a>
+    </nav>
+    <h1>Bakker Stef<br><span>Graphic designer</span></h1>
+  </header>
+
+  <main>
+    <section class="work">
+      <h2>My Work</h2>
+      <div class="projects">
+        <div class="project">Naam Project</div>
+        <div class="project">Naam Project</div>
+        <div class="project">Naam Project</div>
+        <div class="project">Naam Project</div>
+        <div class="project">Naam Project</div>
+      </div>
+    </section>
+
+    <section class="coming-soon">
+      <h2>More coming soon...</h2>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#top" class="back-to-top">Back to top</a>
+    <div class="contact">
+      <p>Contact: +32472773751</p>
+      <p>stefbakker05@gmail.com</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.back-to-top').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

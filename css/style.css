@@ -1,0 +1,201 @@
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #212121;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Achtergrond-strepen */
+.background-stripes {
+  position: fixed;
+  top: 0;
+  left: -100px;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #212121 0 80px,
+    #ffc22b 80px 120px,
+    #212121 120px 160px,
+    #00b0ea 160px 200px,
+    #212121 200px 240px,
+    #ee2b71 240px 280px
+  );
+  opacity: 0.8;
+}
+
+/* Header en navigatie */
+header {
+  padding: 40px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+nav {
+  border: 3px solid #6cbe45;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px; 
+  background-color: #212121;
+
+}
+
+nav a {
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 200%;
+ 
+}
+
+/* Titel */
+header h1 {
+  font-size: 32px;
+  margin-top: 0;
+  background-color: #212121;
+  max-width: 17rem;
+  border: 3px solid #6cbe45;
+  text-align: center;
+  margin-left: 40%;
+}
+
+header h1 span {
+  font-weight: normal;
+  
+  
+}
+
+/* Work sectie */
+.work {
+  max-width: 1440px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #212121;
+  border: 3px solid #6cbe45;
+}
+
+.work h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project {
+  width: 220px;
+  height: 220px;
+  background-color: #fadbC0;
+  color: #212121;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: bold;
+  padding-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Coming soon */
+.coming-soon {
+  text-align: center;
+  font-size: 24px;
+  padding: 60px 20px;
+}
+
+/* Footer */
+footer {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #212121;
+  position: relative;
+  border-top:3px solid #6cbe45;
+
+}
+
+.back-to-top {
+  font-weight: 600;
+  font-size: 200%;
+  color: white;
+  cursor: pointer;
+
+}
+
+.contact {
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  border: 3px solid #6cbe45;
+  padding: 10px 20px;
+  margin-left: 1rem;
+  background-color: #212121;
+  font-size: 100%;
+  margin-top: 40px;
+}
+
+header img{
+width: 50%;
+position: absolute; top: 20%; left: 0%;
+}
+.datavisualisatie img{
+  margin-left: 60%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+  margin-left: 23%;
+}
+
+  .project {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+  .back-to-top {
+    transform: none;
+    position: static;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  header img{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -35%;
+  }
+  .datavisualisatie img{
+    margin-left: 4rem;
+    margin-top: 50%;
+  }
+
+
+
+}
